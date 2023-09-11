@@ -41,7 +41,7 @@ public class BookingView implements View {
         if(result > 0){
             System.out.printf("Ваш заказ номер #%d отменен\n", result);
         }else {
-            System.out.println("Что-то пошло не так");
+            System.out.println("Этот номер брони за вами не зарегистирован");
         }
 
     }

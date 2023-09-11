@@ -56,7 +56,8 @@ public class TableModel implements Model {
      * @return
      */
     public int changeReservationTable(int oldReservation, Date reservationDate, int tableNo, String name){
-         if(oldReservation > 0) {
+         if(oldReservation == Reservation.getId()) {
+
              return oldReservation;
          }
             return  -1;

@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Reservation {
 
-    private static int counter = 10;
-    private final int id;
+    private int counter = 10;
+    private static int id;
 
-    private Date date;
-    private String name;
+    private final Date date;
+    private final String name;
 
     {
         id = ++counter;
@@ -19,11 +19,7 @@ public class Reservation {
         this.name = name;
     }
 
-    public Reservation() {
-
-    }
-
-    public int getId() {
+    public static int getId() {
         return id;
     }
 
